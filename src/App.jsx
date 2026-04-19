@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 /* ─── Icon Components ─── */
 const UploadIcon = () => (
@@ -555,6 +556,7 @@ export default function App() {
           <p className="mt-1">Built with React · Canvas API · Tailwind CSS</p>
         </footer>
       </div>
+      <SpeedInsights />
     </div>
   );
 }
