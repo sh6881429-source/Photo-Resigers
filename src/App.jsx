@@ -1,5 +1,4 @@
 import { useState, useRef, useCallback, useEffect } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 
 /* ─── Icon Components ─── */
 const UploadIcon = () => (
@@ -553,10 +552,10 @@ export default function App() {
         {/* ── Footer ── */}
         <footer className="mt-16 mb-6 text-center text-xs text-slate-600">
           <p>Images are processed entirely in your browser. Nothing is uploaded.</p>
-          <p className="mt-1">Built with React · Canvas API · Tailwind CSS</p>
+          <p className="mt-1 mb-2">Built with React · Canvas API · Tailwind CSS</p>
+          <p><a href="/privacy/" className="text-purple-500 hover:text-purple-400 transition-colors underline underline-offset-4">Privacy Policy</a></p>
         </footer>
       </div>
-      <SpeedInsights />
     </div>
   );
 }
