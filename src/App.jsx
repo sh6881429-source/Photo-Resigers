@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 /* ─── Icon Components ─── */
 const UploadIcon = () => (
@@ -556,6 +557,7 @@ export default function App() {
           <p><a href="/privacy/" className="text-purple-500 hover:text-purple-400 transition-colors underline underline-offset-4">Privacy Policy</a></p>
         </footer>
       </div>
+      <Analytics />
     </div>
   );
 }

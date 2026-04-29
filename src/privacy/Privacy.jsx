@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-slate-950 relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8 text-slate-300">
@@ -47,6 +49,7 @@ export default function Privacy() {
           </section>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
